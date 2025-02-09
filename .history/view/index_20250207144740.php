@@ -12,6 +12,10 @@ if (!isset($_SESSION['usuario_id'])) {
 
 <html lang="pt-br">
 
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+</head>
+
 <?php include("head.php"); ?>
 <?php
 if (isset($_SESSION['usuario_id'])) {

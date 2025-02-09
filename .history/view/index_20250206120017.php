@@ -1,4 +1,5 @@
 <?php
+header("Location: add_user.php");
 session_start();
 
 if (!isset($_SESSION['usuario_id'])) {
@@ -6,18 +7,13 @@ if (!isset($_SESSION['usuario_id'])) {
     exit;
 }
 ?>
-<?php require_once("../controller/ControllerListarLivro.php"); ?>
+<?php require_once("../controller/ControllerListar.php"); ?>
 
 <!DOCTYPE html>
 
 <html lang="pt-br">
 
 <?php include("head.php"); ?>
-<?php
-if (isset($_SESSION['usuario_id'])) {
-    echo "Usuário ativo: ".$_SESSION['usuario_nome']." (<a href='logout.php'>Logout</a>)";
-}
-?>
 
 <body>
   <?php include("menu.php"); ?>
@@ -36,7 +32,7 @@ if (isset($_SESSION['usuario_id'])) {
     </thead>
 
     <tbody>
-      <?php new ListarLivroController(); ?>
+      <?php new listarController(); ?>
     </tbody>
   </table>
 

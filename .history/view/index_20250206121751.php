@@ -6,7 +6,7 @@ if (!isset($_SESSION['usuario_id'])) {
     exit;
 }
 ?>
-<?php require_once("../controller/ControllerListarLivro.php"); ?>
+<?php require_once("../controller/ControllerListar.php"); ?>
 
 <!DOCTYPE html>
 
@@ -36,7 +36,7 @@ if (isset($_SESSION['usuario_id'])) {
     </thead>
 
     <tbody>
-      <?php new ListarLivroController(); ?>
+      <?php new listarController(); ?>
     </tbody>
   </table>
 

@@ -1,7 +1,7 @@
 <?php
 require_once("../init.php");
 
-class Banco{
+class LivroModel {
   protected $mysqli;
 
   public function __construct() {
@@ -9,7 +9,7 @@ class Banco{
   }
 
   private function conexao() {
-    $this->mysqli = new mysqli(BD_SERVIDOR, BD_USUARIO, BD_SENHA, BD_BANCO);
+    $this->mysqli = new mysqli(BD_SERVIDOR, BD_USUARIO, BD_SENHA, BD_BANCO_DE_DADOS);
     if (!$this->mysqli->ping()) {
       printf("Error: %s\n", $this->mysqli->error);
     }
