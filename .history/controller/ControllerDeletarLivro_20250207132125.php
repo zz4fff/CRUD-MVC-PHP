@@ -10,9 +10,9 @@ class DeletarLivroController {
     // TODO: Não está confirmando exclusão
     if ($this->deleta->deleteLivro($id) == TRUE) {
       echo "<script>alert('Registro deletado com sucesso!')</script>"; 
-      header("Location: ../view/index.php"";
+      header("Location: ../view/index.php");
     } else {
-      echo "<script>alert('Erro ao deletar registro!'); history.back()</script>";
+      echo "<script>alert('Erro ao deletar registro!'); history.back();</script>";
     }
   }
 }

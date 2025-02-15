@@ -2,13 +2,13 @@
 require_once("../model/banco.php");
 
 class editarController {
-ivate $editar;
-private $nome;
-private $autor;
-private $quantidade;
- private $preco;
- private $data;
- private $flag;
+  private $editar;
+  private $nome;
+  private $autor;
+  private $quantidade;
+  private $preco;
+  private $data;
+  private $flag;
 
  public function __construct($id) {
  $this->editar = new Banco();

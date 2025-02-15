@@ -18,9 +18,9 @@ class CadastrarLivroController {
     $result = $this->cadastro->incluir();
     if ($result >= 1) {
       echo "<script>alert('Registro incluído com sucesso!')</script>";
-      header('Location: ../view/cadastro.php");
+      header("Location: ../view/cadastro.php");
     } else {
-      echo "<script>alert('Erro ao gravar registro!,verifique se o livro não está duplicado'); history.back()</script>";
+      echo "<script>alert('Erro ao gravar registro!,verifique se o livro não está duplicado'); history.back();</script>";
     }
   }
 }
